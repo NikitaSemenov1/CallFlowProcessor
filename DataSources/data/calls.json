@@ -1,0 +1,205 @@
+{
+  "calls": [
+    {
+      "call_id": 1001,
+      "call_type": "inbound",
+      "scenario_id": "scn-001",
+      "initiator_phone": "+12345670001",
+      "media_record_id": "rec-20001",
+      "initiated_at": "2024-06-11T09:00:00Z",
+      "finished_at": "2024-06-11T09:12:00Z",
+      "context": {"campaign": "PromoA", "priority": "high"}
+    },
+    {
+      "call_id": 1002,
+      "call_type": "outbound",
+      "scenario_id": "scn-002",
+      "initiator_phone": "+12345670002",
+      "media_record_id": "rec-20002",
+      "initiated_at": "2024-06-11T09:13:00Z",
+      "finished_at": "2024-06-11T09:31:00Z",
+      "context": {"campaign": "PromoB", "priority": "medium"}
+    },
+    {
+      "call_id": 1003,
+      "call_type": "inbound",
+      "scenario_id": "scn-003",
+      "initiator_phone": "+12345670003",
+      "media_record_id": "rec-20003",
+      "initiated_at": "2024-06-11T09:15:00Z",
+      "finished_at": "2024-06-11T09:23:00Z",
+      "context": {"campaign": "PromoA", "priority": "low"}
+    },
+    {
+      "call_id": 1004,
+      "call_type": "outbound",
+      "scenario_id": "scn-004",
+      "initiator_phone": "+12345670004",
+      "media_record_id": "rec-20004",
+      "initiated_at": "2024-06-11T09:20:00Z",
+      "finished_at": "2024-06-11T09:36:00Z",
+      "context": {"campaign": "PromoC", "priority": "medium"}
+    },
+    {
+      "call_id": 1005,
+      "call_type": "inbound",
+      "scenario_id": "scn-005",
+      "initiator_phone": "+12345670005",
+      "media_record_id": "rec-20005",
+      "initiated_at": "2024-06-11T09:22:00Z",
+      "finished_at": "2024-06-11T09:33:00Z",
+      "context": {"campaign": "PromoA", "priority": "high"}
+    },
+    {
+      "call_id": 1006,
+      "call_type": "outbound",
+      "scenario_id": "scn-006",
+      "initiator_phone": "+12345670006",
+      "media_record_id": "rec-20006",
+      "initiated_at": "2024-06-11T09:27:00Z",
+      "finished_at": "2024-06-11T09:40:00Z",
+      "context": {"campaign": "PromoD", "priority": "low"}
+    },
+    {
+      "call_id": 1007,
+      "call_type": "inbound",
+      "scenario_id": "scn-007",
+      "initiator_phone": "+12345670007",
+      "media_record_id": "rec-20007",
+      "initiated_at": "2024-06-11T09:32:00Z",
+      "finished_at": "2024-06-11T09:45:00Z",
+      "context": {"campaign": "PromoB", "priority": "medium"}
+    },
+    {
+      "call_id": 1008,
+      "call_type": "outbound",
+      "scenario_id": "scn-008",
+      "initiator_phone": "+12345670008",
+      "media_record_id": "rec-20008",
+      "initiated_at": "2024-06-11T09:34:00Z",
+      "finished_at": "2024-06-11T09:48:00Z",
+      "context": {"campaign": "PromoA", "priority": "low"}
+    },
+    {
+      "call_id": 1009,
+      "call_type": "inbound",
+      "scenario_id": "scn-009",
+      "initiator_phone": "+12345670009",
+      "media_record_id": "rec-20009",
+      "initiated_at": "2024-06-11T09:37:00Z",
+      "finished_at": "2024-06-11T09:51:00Z",
+      "context": {"campaign": "PromoC", "priority": "high"}
+    },
+    {
+      "call_id": 1010,
+      "call_type": "outbound",
+      "scenario_id": "scn-010",
+      "initiator_phone": "+12345670010",
+      "media_record_id": "rec-20010",
+      "initiated_at": "2024-06-11T09:42:00Z",
+      "finished_at": "2024-06-11T09:57:00Z",
+      "context": {"campaign": "PromoB", "priority": "medium"}
+    },
+    {
+      "call_id": 1011,
+      "call_type": "inbound",
+      "scenario_id": "scn-011",
+      "initiator_phone": "+12345670011",
+      "media_record_id": "rec-20011",
+      "initiated_at": "2024-06-11T09:48:00Z",
+      "finished_at": "2024-06-11T10:01:00Z",
+      "context": {"campaign": "PromoD", "priority": "high"}
+    },
+    {
+      "call_id": 1012,
+      "call_type": "outbound",
+      "scenario_id": "scn-012",
+      "initiator_phone": "+12345670012",
+      "media_record_id": "rec-20012",
+      "initiated_at": "2024-06-11T09:53:00Z",
+      "finished_at": "2024-06-11T10:06:00Z",
+      "context": {"campaign": "PromoB", "priority": "low"}
+    },
+    {
+      "call_id": 1013,
+      "call_type": "inbound",
+      "scenario_id": "scn-013",
+      "initiator_phone": "+12345670013",
+      "media_record_id": "rec-20013",
+      "initiated_at": "2024-06-11T09:55:00Z",
+      "finished_at": "2024-06-11T10:11:00Z",
+      "context": {"campaign": "PromoA", "priority": "medium"}
+    },
+    {
+      "call_id": 1014,
+      "call_type": "outbound",
+      "scenario_id": "scn-014",
+      "initiator_phone": "+12345670014",
+      "media_record_id": "rec-20014",
+      "initiated_at": "2024-06-11T09:59:00Z",
+      "finished_at": "2024-06-11T10:18:00Z",
+      "context": {"campaign": "PromoC", "priority": "medium"}
+    },
+    {
+      "call_id": 1015,
+      "call_type": "inbound",
+      "scenario_id": "scn-015",
+      "initiator_phone": "+12345670015",
+      "media_record_id": "rec-20015",
+      "initiated_at": "2024-06-11T10:02:00Z",
+      "finished_at": "2024-06-11T10:17:00Z",
+      "context": {"campaign": "PromoB", "priority": "low"}
+    },
+    {
+      "call_id": 1016,
+      "call_type": "outbound",
+      "scenario_id": "scn-016",
+      "initiator_phone": "+12345670016",
+      "media_record_id": "rec-20016",
+      "initiated_at": "2024-06-11T10:06:00Z",
+      "finished_at": "2024-06-11T10:29:00Z",
+      "context": {"campaign": "PromoD", "priority": "medium"}
+    },
+    {
+      "call_id": 1017,
+      "call_type": "inbound",
+      "scenario_id": "scn-017",
+      "initiator_phone": "+12345670017",
+      "media_record_id": "rec-20017",
+      "initiated_at": "2024-06-11T10:14:00Z",
+      "finished_at": "2024-06-11T10:23:00Z",
+      "context": {"campaign": "PromoA", "priority": "high"}
+    },
+    {
+      "call_id": 1018,
+      "call_type": "outbound",
+      "scenario_id": "scn-018",
+      "initiator_phone": "+12345670018",
+      "media_record_id": "rec-20018",
+      "initiated_at": "2024-06-11T10:16:00Z",
+      "finished_at": "2024-06-11T10:33:00Z",
+      "context": {"campaign": "PromoB", "priority": "low"}
+    },
+    {
+      "call_id": 1019,
+      "call_type": "inbound",
+      "scenario_id": "scn-019",
+      "initiator_phone": "+12345670019",
+      "media_record_id": "rec-20019",
+      "initiated_at": "2024-06-11T10:21:00Z",
+      "finished_at": "2024-06-11T10:39:00Z",
+      "context": {"campaign": "PromoC", "priority": "medium"}
+    },
+    {
+      "call_id": 1020,
+      "call_type": "outbound",
+      "scenario_id": "scn-020",
+      "initiator_phone": "+12345670020",
+      "media_record_id": "rec-20020",
+      "initiated_at": "2024-06-11T10:23:00Z",
+      "finished_at": "2024-06-11T10:50:00Z",
+      "context": {"campaign": "PromoD", "priority": "high"}
+    }
+  ]
+}
+

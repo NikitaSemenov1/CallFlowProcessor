@@ -1,0 +1,65 @@
+{
+  "operators": [
+    {
+      "operator_id": 1,
+      "name": "Alice Cooper",
+      "extension": "1001",
+      "email": "alice.cooper@callcenter.com"
+    },
+    {
+      "operator_id": 2,
+      "name": "Bob Smith",
+      "extension": "1002",
+      "email": "bob.smith@callcenter.com"
+    },
+    {
+      "operator_id": 3,
+      "name": "Carol White",
+      "extension": "1003",
+      "email": "carol.white@callcenter.com"
+    },
+    {
+      "operator_id": 4,
+      "name": "Dan Black",
+      "extension": "1004",
+      "email": "dan.black@callcenter.com"
+    },
+    {
+      "operator_id": 5,
+      "name": "Eve Brown",
+      "extension": "1005",
+      "email": "eve.brown@callcenter.com"
+    },
+    {
+      "operator_id": 6,
+      "name": "Frank Green",
+      "extension": "1006",
+      "email": "frank.green@callcenter.com"
+    },
+    {
+      "operator_id": 7,
+      "name": "Grace Lee",
+      "extension": "1007",
+      "email": "grace.lee@callcenter.com"
+    },
+    {
+      "operator_id": 8,
+      "name": "Hank Adams",
+      "extension": "1008",
+      "email": "hank.adams@callcenter.com"
+    },
+    {
+      "operator_id": 9,
+      "name": "Isabel King",
+      "extension": "1009",
+      "email": "isabel.king@callcenter.com"
+    },
+    {
+      "operator_id": 10,
+      "name": "Jackie Fox",
+      "extension": "1010",
+      "email": "jackie.fox@callcenter.com"
+    }
+  ]
+}
+
