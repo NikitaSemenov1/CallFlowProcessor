@@ -1,0 +1,102 @@
+components_manager:
+    task_processors:
+        main-task-processor:
+            worker_threads: $worker-threads
+        fs-task-processor:
+            worker_threads: $worker-fs-threads
+
+    default_task_processor: main-task-processor
+
+    components:
+        server:
+            listener:
+                port: $server-port
+                task_processor: main-task-processor
+        logging:
+            fs-task-processor: fs-task-processor
+            loggers:
+                default:
+                    file_path: '@stderr'
+                    level: $logger-level
+                    overflow_behavior: discard
+
+        dynamic-config:
+            defaults:
+                HTTP_CLIENT_CONNECTION_POOL_SIZE: 1000
+                POSTGRES_DEFAULT_COMMAND_CONTROL:
+                    network_timeout_ms: 750
+                    statement_timeout_ms: 500
+
+        testsuite-support: {}
+
+        http-client:
+            fs-task-processor: fs-task-processor
+
+        tests-control:
+            load-enabled: $is-testing
+            path: /tests/{action}
+            method: POST
+            task_processor: main-task-processor
+
+        handler-ping:
+            path: /ping
+            method: GET
+            task_processor: main-task-processor
+            throttling_enabled: false
+            url_trailing_slash: strict-match
+
+        handler-statistics-calls-summary:
+            path: /statistics/calls/summary
+            method: GET
+            task_processor: main-task-processor
+
+        handler-statistics-operators:
+            path: /statistics/operators
+            method: GET
+            task_processor: main-task-processor
+
+        postgres:
+            dbconnection: $dbconnection
+            dbconnection#env: DB_CONNECTION
+            blocking_task_processor: fs-task-processor
+            dns_resolver: async
+            sync-start: false
+            connlimit_mode: manual
+
+        dns-client:
+            fs-task-processor: fs-task-processor
+
+        cdr-upload-info: {}
+
+        call-controller: {}
+        call-event-controller: {}
+        connection-controller: {}
+        operator-controller: {}
+        cdr-controller: {}
+
+        call-data-fetcher:
+            lock-name: call-fetcher-lock
+            source-endpoint: http://localhost:8001/calls
+            fetch-limit: 500
+
+        call-event-data-fetcher:
+            lock-name: call-event-fetcher-lock
+            source-endpoint: http://localhost:8001/call_events
+            fetch-limit: 1000
+
+        connection-data-fetcher:
+            lock-name: connection-fetcher-lock
+            source-endpoint: http://localhost:8001/connections
+            fetch-limit: 1000
+
+        operator-data-fetcher:
+            lock-name: operator-fetcher-lock
+            source-endpoint: http://localhost:8001/operators
+            fetch-limit: 100
+
+        cdr-uploader:
+            lock-name: cdr-uploader-lock
+
+        external-cdr-uploader:
+            lock-name: external-cdr-uploader-lock
+            upload-url: http://localhost:8002/records
